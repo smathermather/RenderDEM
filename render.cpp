@@ -36,7 +36,7 @@ void render(PointSet *pset, const std::string &outDir, const std::string &output
     // Set a floor, no matter the resolution parameter
     // (sometimes a wrongly estimated scale of the model can cause the resolution
     // to be set unrealistically low, causing errors)
-    const unsigned int RES_FLOOR = 64;
+    const unsigned int RES_FLOOR = 128;
 
     if (width < RES_FLOOR && height < RES_FLOOR){
         double prev_width = width;
